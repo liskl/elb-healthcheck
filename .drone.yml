@@ -1,0 +1,8 @@
+pipeline:
+  docker:
+    image: plugins/docker
+    repo: docker.infra.tstllc.net/lib/elb-healthcheck
+    tag:
+      - '${DRONE_BRANCH/master/latest}'
+      - '${DRONE_BRANCH}.${DRONE_BUILD_NUMBER}'
+    storage_driver: overlay
