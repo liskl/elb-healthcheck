@@ -1,4 +1,4 @@
-FROM docker.infra.tstllc.net/base/openresty:1.9.15.1-trusty
+FROM docker.infra.tstllc.net/llisk/alpine-nginx:latest
 
-COPY nginx.conf /usr/local/openresty/nginx/conf/nginx.conf
-COPY index.html /www/
+COPY nginx.conf /etc/nginx/nginx.conf
+COPY index.html /usr/share/nginx/html/index.html
