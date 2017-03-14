@@ -4,4 +4,5 @@
 
 allows host level healthchecks on
 
+/index.html
 /healthcheck/index.html
