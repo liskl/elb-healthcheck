@@ -1,4 +1,8 @@
 FROM docker.infra.tstllc.net/llisk/alpine-nginx:latest
 
-COPY nginx.conf /etc/nginx/nginx.conf
+RUN mkdir /usr/share/nginx/html/healthcheck/
+
+COPY nginx.vh.default.conf /etc/nginx/conf.d/default.conf
+
+COPY index.html /usr/share/nginx/html/healthcheck/index.html
 COPY index.html /usr/share/nginx/html/index.html
