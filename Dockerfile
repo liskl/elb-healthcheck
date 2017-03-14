@@ -1,4 +1,4 @@
-FROM docker.infra.tstllc.net/llisk/alpine-nginx:latest 
+FROM registry.tstllc.net/llisk/alpine-nginx:latest
 
 RUN mkdir /usr/share/nginx/html/healthcheck/
 
