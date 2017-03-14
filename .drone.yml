@@ -5,4 +5,4 @@ pipeline:
     tag:
       - '${DRONE_BRANCH/master/latest}'
       - '${DRONE_BRANCH}.${DRONE_BUILD_NUMBER}'
-    storage_driver: overlay
+#    storage_driver: overlay
