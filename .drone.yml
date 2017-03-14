@@ -1,7 +1,7 @@
 pipeline:
   docker:
     image: plugins/docker
-    repo: registry.liskl.net/lib/elb-healthcheck
+    repo: registry.liskl.com/tstllc/elb-healthcheck
     tag:
       - '${DRONE_BRANCH/master/latest}'
       - '${DRONE_BRANCH}.${DRONE_BUILD_NUMBER}'

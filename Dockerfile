@@ -1,4 +1,4 @@
-FROM registry.liskl.net/tstllc/alpine-nginx:latest
+FROM registry.liskl.com/tstllc/alpine-nginx:latest
 
 RUN mkdir /usr/share/nginx/html/healthcheck/
 
